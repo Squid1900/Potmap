@@ -189,7 +189,6 @@ def home_page():
 
     render_scrolling_content('./break.jpg', 'How to Report a Pothole?', report_info)
     
-    render_footer()
 
 if __name__ == '__main__':
     home_page()
