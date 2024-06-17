@@ -6,6 +6,7 @@ def apply_custom_styles():
         <style>
         body {
             font-family: 'Open Sans', sans-serif;
+            background-color: #F0FFF0;
         }
 
         /* Hero Section */
@@ -34,7 +35,7 @@ def apply_custom_styles():
             padding: 40px 0;
         }
         .bubble {
-            background-color: #F0FFF0;
+            background-color: #FFFFFF;
             padding: 30px;
             border-radius: 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -42,6 +43,10 @@ def apply_custom_styles():
             flex: 1;
             margin: 0 10px;
             min-width: 250px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .bubble:hover {
+            transform: scale(1.05);
         }
         .section-title {
             font-size: 24px;
@@ -80,6 +85,8 @@ def apply_custom_styles():
             padding: 20px 0;
             border-top: 1px solid #A2D9CE;
             color: #4C7850;
+            background-color: #EAF6F2;
+            margin-top: 50px;
         }
         </style>
         """,
@@ -170,8 +177,15 @@ def home_page():
     
     st.markdown("<div style='height: 60px;'></div>", unsafe_allow_html=True)
     
-    report_info = """Using our app, simply take a photo of a pothole with your phone and our software will verify that it is a pothole and extract the location for you."""
+    report_info = """Reporting a pothole using our app is simple and helps keep our roads safe:
     
+    1. **Take a Photo**: Use your phone to capture a clear image of the pothole.
+    2. **Automatic Detection**: Our software analyzes the image to verify the presence of a pothole.
+    3. **Location Extraction**: The app automatically extracts the location information from the photo.
+    4. **Submit Report**: Complete the report with any additional details and submit it. Your report will be added to our database and prioritized for repair.
+    
+    By reporting potholes, you contribute to safer roads and help authorities address road damage more efficiently. Your participation makes a significant difference in road safety and maintenance."""
+
     render_scrolling_content('./break.jpg', 'How to Report a Pothole?', report_info)
     
     render_footer()
