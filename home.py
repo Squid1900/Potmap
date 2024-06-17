@@ -179,10 +179,11 @@ def home_page():
     
     report_info = """Reporting a pothole using our app is simple and helps keep our roads safe:
     
-    1. **Take a Photo**: Use your phone to capture a clear image of the pothole.
-    2. **Automatic Detection**: Our software analyzes the image to verify the presence of a pothole.
-    3. **Location Extraction**: The app automatically extracts the location information from the photo.
-    4. **Submit Report**: Complete the report with any additional details and submit it. Your report will be added to our database and prioritized for repair.
+    1. Take a Photo: Use your phone to capture a clear image of the pothole.
+    2. Upload: Using our report page you can upload a photo from your library.
+    2. Automatic Detection: Our software analyses the image to verify the presence of a pothole.
+    3. Location Extraction: The app automatically extracts the location information from the photo.
+    4. Submit Report: Complete the report with any additional details and submit it. Your report will be added to our database and prioritized for repair.
     
     By reporting potholes, you contribute to safer roads and help authorities address road damage more efficiently. Your participation makes a significant difference in road safety and maintenance."""
 
