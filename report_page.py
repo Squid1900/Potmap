@@ -110,7 +110,6 @@ def report_page():
     st.markdown('<div class="form-container">', unsafe_allow_html=True)
 
     uploaded_file = st.file_uploader("Upload an image of the pothole...", type=["jpg", "png", "jpeg"])
-    suburb = st.text_input("Enter the suburb name:")
     report_button = st.button("Report Pothole")
 
     if uploaded_file is not None and report_button:
